@@ -1,34 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Doctype-->
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--UTF-8-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos-carlos-leon.css">
+    <link rel="stylesheet" href="estilos-carlos-leon.css"><!--Enlace a estilos-->
     
     <title>Encuesta</title>
 </head>
     <body class="container mt-3 bg-dark text-white">
-        <!--Id leon-->
-            <form id="leon" action="resultado-carlos-leon.html">
 
-                <div class="mb-3">
-                    <label for="chavez" class="form-label">Edad</label>
-                    <input type="text" class="form-control" name="chavez" id="chavez">
-                </div class="mb-3">
+        <h1 class="text-center mb-3">Cuestionario</h1>
 
-                <div class="mb-3 d-flex">
-                    <label for="sexo" class="form-label m-2">Sexo</label>
-                       <select id="sexo" name="sexo" class="form-select m-2">
+                <!--Id leon-->
+            <form id="leon" action="resultado-carlos-leon.html" class="p-3">
+                <div class="mb-3 row">
+                                                <!--form-label-->
+                    <label for="chavez" class="form-label col-lg">Edad</label>
+                    <!--Type: number-->          <!--form-control-->       <!--Id chavez-->
+                    <input type="number" class="form-control col" name="chavez" id="chavez">
+                </div>
+
+                
+
+                <div class="mb-3 row" >
+                    <label for="sexo" class="form-label m-2 col">Sexo</label>
+                        <!--Type: select-->                                 
+                       <select id="sexo" name="sexo" class="form-select m-2 col">
                             <option value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
                         </select>
                     </label>
                 </div>
 
-                <div class="mb-3 d-flex">
-                    <label for="nivEducacion" class="form-label m">Nivel de Educación</label>
-                        <select id="nivelEducacion" name="nivelEducacion" class="form-select m-2">
+                <div class="mb-3 row">
+                    <label for="nivEducacion" class="form-label m col">Nivel de Educación</label>
+                        <!--Type: select-->
+                        <select id="nivelEducacion" name="nivelEducacion" class="form-select m-2 col">
                             <option value="preescolar">Preescolar</option>
                             <option value="primaria">Primaria</option>
                             <option value="secundaria">Secundaria</option>
@@ -37,15 +47,16 @@
                         </select>
                 </div>
 
-                <div class="mb-3">
-                    <label for="ocupacion" class="form-label size-">Ocupación</label>
-                    <input type="text" class="form-control" name="ocupacion" id="ocupacion">
+                <div class="mb-3 row">
+                    <label for="ocupacion" class="form-label col">Ocupación</label>
+                    <input type="text" class="form-control col" name="ocupacion" id="ocupacion">
                 </div>
 
-                <div>
+                <div>                       <!--btn btn primary-->
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
+            <!--Enlace java-script-->
         <script src="script-carlos-leon.js"></script>
     </body>
 </html>
