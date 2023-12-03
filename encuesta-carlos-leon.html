@@ -1,24 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Doctype-->
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--UTF-8-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos-carlos-leon.css">
+    <link rel="stylesheet" href="estilos-carlos-leon.css"><!--Enlace a estilos-->
     
     <title>Encuesta</title>
 </head>
     <body class="container mt-3 bg-dark text-white">
-        <!--Id leon-->
-            <form id="leon" action="resultado-carlos-leon.html">
 
+        <h1 class="text-center mb-3">Cuestionario</h1>
+
+                <!--Id leon-->
+            <form id="leon" action="resultado-carlos-leon.html" class="p-3">
                 <div class="mb-3">
                     <label for="chavez" class="form-label">Edad</label>
-                    <input type="text" class="form-control" name="chavez" id="chavez">
+                    <!--Type: number-->                                    <!--Id chavez-->
+                    <input type="number" class="form-control" name="chavez" id="chavez">
                 </div class="mb-3">
 
                 <div class="mb-3 d-flex">
                     <label for="sexo" class="form-label m-2">Sexo</label>
+                        <!--Type: select-->                                 
                        <select id="sexo" name="sexo" class="form-select m-2">
                             <option value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
@@ -28,6 +34,7 @@
 
                 <div class="mb-3 d-flex">
                     <label for="nivEducacion" class="form-label m">Nivel de Educación</label>
+                        <!--Type: select-->
                         <select id="nivelEducacion" name="nivelEducacion" class="form-select m-2">
                             <option value="preescolar">Preescolar</option>
                             <option value="primaria">Primaria</option>
@@ -46,6 +53,7 @@
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
+            <!--Enlace java-script-->
         <script src="script-carlos-leon.js"></script>
     </body>
 </html>

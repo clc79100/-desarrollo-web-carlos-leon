@@ -20,16 +20,12 @@ function obtenerParametro(name){
 }
 
 
-
-
-
-
 edad = obtenerParametro('chavez');
 sexo = obtenerParametro('sexo');
 nivelEduacion = obtenerParametro('nivelEducacion');
 ocupacion = obtenerParametro('ocupacion');
 document.getElementById('resultado').innerHTML =
 '<p>Edad: ' + edad + '</p>' + 
-'<p>sexo:' + sexo   + '</p>' + 
-'<p>Nivel educativo:' + nivelEduacion + '</p>'+
-'<p>ocupacion:' + ocupacion + '</p>';
+'<p>sexo: ' + sexo   + '</p>' + 
+'<p>Nivel educativo: ' + nivelEduacion + '</p>'+
+'<p>ocupacion: ' + ocupacion + '</p>';

@@ -1,9 +1,31 @@
 label{
     font-size: larger;
     font-weight: bold;
-    
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#leon, #leon2{
+
+    background-color: rgb(24, 26, 27);
+    box-shadow: 4px 8px 4px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+#leon2{
+
+}
+
+h1,h2{
+    font-weight: bold;
+}
+    
+
+@media (min-width: 768px) {
+    #leon, #leon2{
+        width: 50%;
+        margin: auto;
+    }
 }
