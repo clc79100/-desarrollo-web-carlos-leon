@@ -16,26 +16,29 @@
 
                 <!--Id leon-->
             <form id="leon" action="resultado-carlos-leon.html" class="p-3">
-                <div class="mb-3">
-                    <label for="chavez" class="form-label">Edad</label>
-                    <!--Type: number-->                                    <!--Id chavez-->
-                    <input type="number" class="form-control" name="chavez" id="chavez">
-                </div class="mb-3">
+                <div class="mb-3 row">
+                                                <!--form-label-->
+                    <label for="chavez" class="form-label col-lg">Edad</label>
+                    <!--Type: number-->          <!--form-control-->       <!--Id chavez-->
+                    <input type="number" class="form-control col" name="chavez" id="chavez">
+                </div>
 
-                <div class="mb-3 d-flex">
-                    <label for="sexo" class="form-label m-2">Sexo</label>
+                
+
+                <div class="mb-3 row" >
+                    <label for="sexo" class="form-label m-2 col">Sexo</label>
                         <!--Type: select-->                                 
-                       <select id="sexo" name="sexo" class="form-select m-2">
+                       <select id="sexo" name="sexo" class="form-select m-2 col">
                             <option value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
                         </select>
                     </label>
                 </div>
 
-                <div class="mb-3 d-flex">
-                    <label for="nivEducacion" class="form-label m">Nivel de Educación</label>
+                <div class="mb-3 row">
+                    <label for="nivEducacion" class="form-label m col">Nivel de Educación</label>
                         <!--Type: select-->
-                        <select id="nivelEducacion" name="nivelEducacion" class="form-select m-2">
+                        <select id="nivelEducacion" name="nivelEducacion" class="form-select m-2 col">
                             <option value="preescolar">Preescolar</option>
                             <option value="primaria">Primaria</option>
                             <option value="secundaria">Secundaria</option>
@@ -44,12 +47,12 @@
                         </select>
                 </div>
 
-                <div class="mb-3">
-                    <label for="ocupacion" class="form-label size-">Ocupación</label>
-                    <input type="text" class="form-control" name="ocupacion" id="ocupacion">
+                <div class="mb-3 row">
+                    <label for="ocupacion" class="form-label col">Ocupación</label>
+                    <input type="text" class="form-control col" name="ocupacion" id="ocupacion">
                 </div>
 
-                <div>
+                <div>                       <!--btn btn primary-->
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
